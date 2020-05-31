@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "809374976329",
+    "firebase_url": "https://myhitha-9e430.firebaseio.com",
+    "project_id": "myhitha-9e430",
+    "storage_bucket": "myhitha-9e430.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809374976329:android:5218372d8267b3e324f298",
+        "android_client_info": {
+          "package_name": "com.naestech.prasanth.myhita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "809374976329-c96ehm48pmub3p0f5spp6v84vpead5vd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.naestech.prasanth.myhita",
+            "certificate_hash": "1c59d5cf764e0bb3d79ee920756f11756421ec33"
+          }
+        },
+        {
+          "client_id": "809374976329-3umaarnhnofefcoqe5m4528uq5pt3iqt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKQJUat5UxZIlj5YkemcFYDrFEqEzZzoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "809374976329-3umaarnhnofefcoqe5m4528uq5pt3iqt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

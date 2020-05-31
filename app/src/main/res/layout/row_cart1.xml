@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_2dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/product_title"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="4"
+            android:gravity="start|center"
+            android:layout_gravity="center"
+            android:text="Food"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="2"
+                android:textColor="@color/green_light"
+                android:gravity="center"
+                android:layout_weight="0.5"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.3"
+                android:gravity="start"
+                android:textColor="@color/green_light"
+                android:text="X"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.5"
+                android:textColor="@color/green_light"
+                android:text="50"
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="="
+                android:textStyle="bold"
+                android:textColor="@color/green_light"
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="₹"
+                android:textStyle="bold"
+                android:textColor="@color/green_light"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/sub_total"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_5dp"
+                android:gravity="start"
+                android:text="Food"
+                android:textStyle="bold"
+                android:textColor="@color/green_light"
+                android:textSize="18sp" />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

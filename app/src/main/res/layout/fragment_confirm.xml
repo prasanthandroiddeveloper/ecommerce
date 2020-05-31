@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_placeholder_select" />
+
+                    <com.naestech.prasanth.myhita.customfonts.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adderss"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_credit_card_select" />
+
+                    <com.naestech.prasanth.myhita.customfonts.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_confirm" />
+
+                    <com.naestech.prasanth.myhita.customfonts.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm"
+                        android:textColor="@color/text_color"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5dp"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_5dp"
+                        android:orientation="vertical">
+
+                        <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Select Order Date and Time"
+                            android:background="@color/gen_white"
+                            android:textColor="@color/green_light">
+
+                        </com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cardBorderColor" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_2dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/fromTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center"
+                                android:text="Date"
+                                android:drawablePadding="-50dp"
+                                android:textColor="@color/subtext"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:drawableStart="@drawable/calendar" />
+
+                            <TextView
+                                android:id="@+id/timeTV"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="2dp"
+                                android:text="Time"
+                                android:visibility="gone"
+                                android:layout_gravity="center"
+                                android:drawableEnd="@drawable/time"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/subtext"
+                                android:drawableRight="@drawable/calendar" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_2dp"
+                            android:orientation="horizontal">
+
+
+
+                            <TextView
+                                android:id="@+id/timeTVs"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="2dp"
+                                android:text="Time"
+                                android:drawablePadding="-50dp"
+                                android:layout_gravity="center"
+                                android:drawableStart="@drawable/time"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/subtext" />
+
+
+
+                            <Spinner
+                                android:id="@+id/spinners"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_gravity="center"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/timelyt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            android:gravity="center">
+
+                            <TimePicker
+                                android:id="@+id/tmpckr"
+                                android:layout_width="wrap_content"
+                                android:timePickerMode="spinner"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center" />
+
+                            <Button
+                                android:id="@+id/settime"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:onClick="setTime"
+                                android:text="save" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:text="Item Details"
+                    android:background="@color/gen_white"
+                    android:textColor="@color/green_light">
+
+                </com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/cardBorderColor" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cart_rv"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_2dp"
+                        android:orientation="vertical">
+
+                        <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Payment Details"
+                            android:background="@color/gen_white"
+                            android:textColor="@color/green_light"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/cardBorderColor" />
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@color/gen_white"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="start">
+
+                                <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sub Total : "
+                                    android:textColor="@color/subtext"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:gravity="end">
+
+                                <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                                    android:id="@+id/total"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="500"
+                                    android:textColor="#000"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:background="@color/gen_white"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="start">
+
+                                <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total : "
+                                    android:textColor="@color/subtext"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:gravity="end">
+
+                                <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                                    android:id="@+id/shipping_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="500 "
+                                    android:textColor="#000"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin_1dp"
+                            android:layout_marginTop="@dimen/margin_10dp"
+                            android:layout_marginBottom="@dimen/margin_10dp"
+                            android:background="@color/lightgrey" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_10dp"
+                            android:orientation="horizontal"
+                            android:background="@color/gen_white"
+                            android:weightSum="10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4"
+                                android:gravity="start">
+
+                                <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Amount : "
+                                    android:textSize="18sp"
+                                    android:textColor="@color/subtext"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:gravity="end">
+
+                                <com.naestech.prasanth.myhita.customfonts.MyTextViewSansBold
+                                    android:id="@+id/total_amount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="500"
+                                    android:textColor="#000"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+                <RadioGroup
+                    android:id="@+id/payment_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/card_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:checked="true"
+                        android:text="CARD PAYMENT" />
+
+                    <RadioButton
+                        android:id="@+id/cash_on_delivery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="CASH ON DELIVERY" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_bitter"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:gravity="center">
+
+            <com.naestech.prasanth.myhita.customfonts.MyTextView
+                android:id="@+id/back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="BACK"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/margin_1dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center">
+
+
+            <com.naestech.prasanth.myhita.customfonts.MyTextView
+                android:id="@+id/place_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="PLACE YOUR ORDER"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
